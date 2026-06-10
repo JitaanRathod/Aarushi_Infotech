@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: #1a2535;
+    background-color: #e2e8f0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #093c5d;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #e8e0d0;
+}
+::-webkit-scrollbar-thumb {
+  background: #093c5d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b7597;
+}
+
+/* Hide default cursor on desktop */
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+  a, button, select, input, textarea, [role="button"] {
+    cursor: none;
+  }
+}
+
+/* Char reveal helpers */
+.char-reveal-container {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.char-reveal-item {
+  display: inline-block;
+  transform: translateY(105%);
+}
+
+/* Section base styles */
+.section-cream {
+  background-color: #e2e8f0;
+}
+.section-white {
+  background-color: #f1f5f9;
+}
+.section-dark {
+  background-color: #093c5d;
+}
+
+/* Premium card style */
+.card-premium {
+  background: #ffffff;
+  border: 1px solid #ddd6c6;
+  border-radius: 20px;
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.card-premium:hover {
+  border-color: #6fd1d7;
+  box-shadow: 0 20px 60px rgba(9, 60, 93, 0.08);
+  transform: translateY(-4px);
+}
+
+/* Magnetic helper */
+.magnetic-btn {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Amber underline */
+.amber-underline {
+  position: relative;
+  display: inline-block;
+}
+.amber-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #D4A017;
+  border-radius: 2px;
+}
+
+/* Tag pill style */
+.tag-pill {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 100px;
+  background: #e8e0d0;
+  color: #3b7597;
+  display: inline-block;
+}
