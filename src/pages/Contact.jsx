@@ -123,18 +123,18 @@ export default function Contact() {
                       <div className="space-y-1">
                         <p className="text-sm text-brand-navy font-bold">
                           <a
-                            href={`tel:${SITE.phoneTel}`}
-                            className="hover:underline"
-                          >
-                            {SITE.phone}
-                          </a>
-                        </p>
-                        <p className="text-sm text-brand-navy font-bold">
-                          <a
                             href="tel:+919967844269"
                             className="hover:underline"
                           >
                             +91-9967844269
+                          </a>
+                        </p>
+                        <p className="text-sm text-brand-navy font-bold">
+                          <a
+                            href={`tel:${SITE.phoneTel}`}
+                            className="hover:underline"
+                          >
+                            {SITE.phone}
                           </a>
                         </p>
                       </div>
@@ -147,18 +147,18 @@ export default function Contact() {
                       <div className="space-y-1">
                         <p className="text-sm text-brand-navy font-bold">
                           <a
-                            href={`mailto:${SITE.email}`}
-                            className="hover:underline"
-                          >
-                            {SITE.email}
-                          </a>
-                        </p>
-                        <p className="text-sm text-brand-navy font-bold">
-                          <a
                             href="mailto:info@aarushiinfotech.in"
                             className="hover:underline"
                           >
                             info@aarushiinfotech.in
+                          </a>
+                        </p>
+                        <p className="text-sm text-brand-navy font-bold">
+                          <a
+                            href={`mailto:${SITE.email}`}
+                            className="hover:underline"
+                          >
+                            {SITE.email}
                           </a>
                         </p>
                       </div>

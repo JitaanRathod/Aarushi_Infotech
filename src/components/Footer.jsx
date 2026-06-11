@@ -129,24 +129,35 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services */}
+          {/* Contact Us (replaces Services to reduce footer size) */}
           <div className="lg:col-span-3 flex flex-col gap-6">
 
             <h4 className="font-heading font-bold text-xs uppercase tracking-widest text-brand-cyan">
-              Our Services
+              Contact Us
             </h4>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 text-sm text-white/70">
 
-              {SERVICE_LINKS.map((service) => (
-                <Link
-                  key={service.path}
-                  to={service.path}
-                  className="text-sm text-white/70 hover:text-brand-mint transition-colors"
-                >
-                  {service.label}
-                </Link>
-              ))}
+              <div className="flex items-center gap-3">
+                <Phone className="w-4 h-4 text-brand-mint" />
+                <div className="flex flex-col gap-1">
+                  <a href="tel:+919967844269" className="hover:text-brand-mint transition-colors text-sm">+91-9967844269</a>
+                  <a href={`tel:${SITE.phoneTel}`} className="hover:text-brand-mint transition-colors text-sm">{SITE.phone}</a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <Mail className="w-4 h-4 text-brand-mint" />
+                <div className="flex flex-col gap-1">
+                  <a href="mailto:info@aarushiinfotech.in" className="hover:text-brand-mint transition-colors text-sm">info@aarushiinfotech.in</a>
+                  <a href={`mailto:${SITE.email}`} className="hover:text-brand-mint transition-colors text-sm">{SITE.email}</a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <MessageSquare className="w-4 h-4 text-brand-mint" />
+                <a href={`https://wa.me/${SITE.whatsapp}?text=${whatsappText}`} target="_blank" rel="noreferrer" className="hover:text-brand-mint transition-colors text-sm">Chat on WhatsApp</a>
+              </div>
 
             </div>
           </div>
@@ -170,55 +181,7 @@ export default function Footer() {
                 </div>
               ))}
 
-              <div className="pt-2 flex flex-col gap-2 border-t border-white/10">
-                <div className="flex items-center gap-3">
-                  <Phone className="w-4 h-4 text-brand-mint" />
-                  <div className="flex flex-col gap-1">
-                    <a
-                      href={`tel:${SITE.phoneTel}`}
-                      className="hover:text-brand-mint transition-colors text-sm"
-                    >
-                      {SITE.phone}
-                    </a>
-                    <a
-                      href="tel:+919967844269"
-                      className="hover:text-brand-mint transition-colors text-sm"
-                    >
-                      +91-9967844269
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <Mail className="w-4 h-4 text-brand-mint" />
-                  <div className="flex flex-col gap-1">
-                    <a
-                      href={`mailto:${SITE.email}`}
-                      className="hover:text-brand-mint transition-colors text-sm"
-                    >
-                      {SITE.email}
-                    </a>
-                    <a
-                      href="mailto:info@aarushiinfotech.in"
-                      className="hover:text-brand-mint transition-colors text-sm"
-                    >
-                      info@aarushiinfotech.in
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <MessageSquare className="w-4 h-4 text-brand-mint" />
-                  <a
-                    href={`https://wa.me/${SITE.whatsapp}?text=${whatsappText}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-brand-mint transition-colors text-sm"
-                  >
-                    Chat on WhatsApp
-                  </a>
-                </div>
-              </div>
+              {/* Contacts moved to the Contact Us column to reduce footer size */}
 
             </div>
           </div>
