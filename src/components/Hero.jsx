@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Terminal, Layers, MessageSquare, Code } from 'lucide-react';
 import { gsap } from 'gsap';
@@ -67,10 +67,11 @@ const titleText =
 
 const words = titleText.split(' ');
 
-return ( <section
-   ref={containerRef}
-   className="relative min-h-screen pt-32 pb-20 px-6 md:px-12 flex items-center overflow-hidden bg-slate-200"
- >
+return (
+  <section
+    ref={containerRef}
+    className="relative min-h-screen pt-32 pb-20 px-6 md:px-12 flex items-center overflow-hidden bg-slate-200 animate-fade-up"
+  >
 {/* Background Effects */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-brand-cyan/20 blur-[120px]" />
@@ -82,7 +83,7 @@ return ( <section
     <div className="lg:col-span-7 flex flex-col justify-center">
       <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-navy/5 border border-brand-navy/10 text-brand-navy font-heading font-extrabold text-xs tracking-wider uppercase mb-6 w-fit">
         <span className="w-2 h-2 rounded-full bg-brand-mint animate-pulse" />
-        Serving Virar · Vasai · Mumbai · Thane
+        Serving GUJARAT, MAHARASTRA, JHARKHAND
       </div>
 
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-navy leading-[1.1] mb-6 select-none font-heading">

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   MapPin,
@@ -12,10 +11,7 @@ import logo from '../assets/logo.png';
 import {
   SITE,
   SERVICE_LINKS,
-  AREAS_SERVED
 } from '../config/siteConfig';
-
-import LocationButton from './LocationButton';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -159,76 +155,72 @@ export default function Footer() {
           <div className="lg:col-span-4 flex flex-col gap-6">
 
             <h4 className="font-heading font-bold text-xs uppercase tracking-widest text-brand-cyan">
-              Contact Information
+              Our Branches
             </h4>
 
             <div className="flex flex-col gap-4 text-sm text-white/70">
 
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-brand-mint flex-shrink-0 mt-0.5" />
-                <span>{SITE.address}</span>
-              </div>
+              {SITE.branches.map((branch, index) => (
+                <div key={index} className="pb-3 border-b border-white/10 last:border-b-0">
+                  <h5 className="font-semibold text-white mb-1">{branch.name}</h5>
+                  <div className="flex items-start gap-2 mb-2">
+                    <MapPin className="w-4 h-4 text-brand-mint flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">{branch.address}</span>
+                  </div>
+                </div>
+              ))}
 
-              <LocationButton
-                variant="footer"
-                label="View Location"
-                className="w-fit"
-              />
+              <div className="pt-2 flex flex-col gap-2 border-t border-white/10">
+                <div className="flex items-center gap-3">
+                  <Phone className="w-4 h-4 text-brand-mint" />
+                  <div className="flex flex-col gap-1">
+                    <a
+                      href={`tel:${SITE.phoneTel}`}
+                      className="hover:text-brand-mint transition-colors text-sm"
+                    >
+                      {SITE.phone}
+                    </a>
+                    <a
+                      href="tel:+919967844269"
+                      className="hover:text-brand-mint transition-colors text-sm"
+                    >
+                      +91-9967844269
+                    </a>
+                  </div>
+                </div>
 
-              <div className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-brand-mint" />
-                <a
-                  href={`tel:${SITE.phoneTel}`}
-                  className="hover:text-brand-mint transition-colors"
-                >
-                  {SITE.phone}
-                </a>
-              </div>
+                <div className="flex items-center gap-3">
+                  <Mail className="w-4 h-4 text-brand-mint" />
+                  <div className="flex flex-col gap-1">
+                    <a
+                      href={`mailto:${SITE.email}`}
+                      className="hover:text-brand-mint transition-colors text-sm"
+                    >
+                      {SITE.email}
+                    </a>
+                    <a
+                      href="mailto:info@aarushiinfotech.in"
+                      className="hover:text-brand-mint transition-colors text-sm"
+                    >
+                      info@aarushiinfotech.in
+                    </a>
+                  </div>
+                </div>
 
-              <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-brand-mint" />
-                <a
-                  href={`mailto:${SITE.email}`}
-                  className="hover:text-brand-mint transition-colors"
-                >
-                  {SITE.email}
-                </a>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <MessageSquare className="w-4 h-4 text-brand-mint" />
-                <a
-                  href={`https://wa.me/${SITE.whatsapp}?text=${whatsappText}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-brand-mint transition-colors"
-                >
-                  Chat on WhatsApp
-                </a>
+                <div className="flex items-center gap-3">
+                  <MessageSquare className="w-4 h-4 text-brand-mint" />
+                  <a
+                    href={`https://wa.me/${SITE.whatsapp}?text=${whatsappText}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-brand-mint transition-colors text-sm"
+                  >
+                    Chat on WhatsApp
+                  </a>
+                </div>
               </div>
 
             </div>
-          </div>
-
-        </div>
-
-        {/* SEO Service Areas */}
-        <div className="py-8 border-b border-white/10">
-
-          <h4 className="text-xs uppercase tracking-widest text-brand-cyan font-bold mb-4">
-            Areas We Serve
-          </h4>
-
-          <div className="flex flex-wrap gap-3">
-            {AREAS_SERVED.map((area) => (
-              <Link
-                key={area.name}
-                to={area.path}
-                className="text-xs px-3 py-1 rounded-full bg-white/5 hover:bg-white/10 text-white/70 hover:text-brand-mint transition-colors"
-              >
-                {area.name}
-              </Link>
-            ))}
           </div>
 
         </div>

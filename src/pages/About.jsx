@@ -1,4 +1,3 @@
-import React from 'react';
 import { Target, Eye, ShieldCheck, Heart } from 'lucide-react';
 
 export default function About() {

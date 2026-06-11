@@ -1,19 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => {
-    setIsOpen(false);
-  }, [location.pathname]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
+    { name: 'Industries', path: '/industries' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -108,6 +104,7 @@ export default function Navbar() {
             <NavLink
               key={link.name}
               to={link.path}
+              onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
                 `font-heading font-extrabold text-2xl uppercase tracking-widest transition-colors duration-300 ${
                   isActive

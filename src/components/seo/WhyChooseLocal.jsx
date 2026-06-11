@@ -1,4 +1,3 @@
-import React from 'react';
 import { Award, Users, MapPin, Clock } from 'lucide-react';
 
 const icons = [Award, Users, MapPin, Clock];
@@ -37,3 +36,4 @@ export default function WhyChooseLocal({ points }) {
     </section>
   );
 }
+

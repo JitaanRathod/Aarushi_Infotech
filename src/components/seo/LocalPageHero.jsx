@@ -1,4 +1,3 @@
-import React from 'react';
 import { Phone, MessageSquare } from 'lucide-react';
 import { SITE } from '../../config/siteConfig';
 
@@ -50,3 +49,4 @@ export default function LocalPageHero({ title, subtitle }) {
     </section>
   );
 }
+

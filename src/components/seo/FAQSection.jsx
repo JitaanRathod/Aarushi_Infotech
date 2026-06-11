@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 export default function FAQSection({ city, faqs }) {
@@ -63,3 +63,4 @@ export default function FAQSection({ city, faqs }) {
     </section>
   );
 }
+

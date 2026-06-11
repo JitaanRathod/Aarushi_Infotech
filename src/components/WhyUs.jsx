@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Clock, Award, Coins, LifeBuoy } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -79,7 +79,7 @@ export default function WhyUs() {
   return (
     <section
       ref={sectionRef}
-      className="py-24 px-6 md:px-12 bg-slate-50/50 relative overflow-hidden"
+      className="py-24 px-6 md:px-12 bg-slate-50/50 relative overflow-hidden animate-fade-up"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
 

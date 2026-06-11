@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, MessageSquare, ArrowRight } from 'lucide-react';
 import { SITE } from '../../config/siteConfig';
@@ -47,3 +46,4 @@ export default function LocalCTA() {
     </section>
   );
 }
+

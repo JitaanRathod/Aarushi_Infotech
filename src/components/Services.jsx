@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import {
   BookOpen,
@@ -115,7 +115,7 @@ export default function Services() {
   return (
     <section
       ref={sectionRef}
-      className="py-24 px-6 md:px-12 bg-slate-100 relative overflow-hidden"
+      className="py-24 px-6 md:px-12 bg-slate-100 relative overflow-hidden animate-fade-up"
     >
       <div className="absolute right-0 top-0 w-96 h-96 bg-brand-cyan/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute left-0 bottom-0 w-96 h-96 bg-brand-mint/5 rounded-full blur-[100px] pointer-events-none" />

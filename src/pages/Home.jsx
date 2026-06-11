@@ -1,8 +1,7 @@
-import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Hero from '../components/Hero';
+import OurCustomers from '../components/OurCustomers';  
 import Services from '../components/Services';
-import Stats from '../components/Stats';
 import WhyUs from '../components/WhyUs';
 import { SITE } from '../config/siteConfig';
 
@@ -52,10 +51,9 @@ const serviceSchema = {
     'WhatsApp Business Integration',
   ],
   areaServed: [
-    'Virar',
-    'Vasai',
-    'Mumbai',
-    'Thane',
+    'Gujarat',
+    'Maharashtra',
+    'Jharkhand',
   ],
 };
 
@@ -185,8 +183,8 @@ export default function Home() {
       </Helmet>
 
       <Hero />
+      <OurCustomers />
       <Services />
-      <Stats />
       <WhyUs />
     </main>
   );

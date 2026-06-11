@@ -1,4 +1,3 @@
-import React from 'react';
 import { MapPin, ExternalLink } from 'lucide-react';
 import { SITE } from '../config/siteConfig';
 
@@ -40,3 +39,4 @@ export default function LocationButton({
     </div>
   );
 }
+

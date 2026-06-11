@@ -1,4 +1,3 @@
-import React from 'react';
 import { BookOpen, MessageSquare, Globe, Users, Briefcase, Cpu, CheckCircle } from 'lucide-react';
 
 export default function ServicesPage() {
@@ -107,7 +106,7 @@ export default function ServicesPage() {
 
         {/* Services Detail List */}
         <div className="flex flex-col gap-12">
-          {services.map((service, index) => {
+          {services.map((service) => {
             const Icon = service.icon;
             return (
               <div 
@@ -155,3 +154,4 @@ export default function ServicesPage() {
     </div>
   );
 }
+

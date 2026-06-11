@@ -118,7 +118,33 @@
   background: #D4A017;
   border-radius: 2px;
 }
+/* ── Customers marquee ──────────────────────────────────── */
+@keyframes customers-scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.3334%); }
+}
 
+@keyframes customers-scroll-right {
+  0%   { transform: translateX(-33.3334%); }
+  100% { transform: translateX(0); }
+}
+
+.customers-track-left {
+  animation: customers-scroll-left 40s linear infinite;
+  will-change: transform;
+}
+
+.customers-track-right {
+  animation: customers-scroll-right 38s linear infinite;
+  will-change: transform;
+}
+
+/* Pause on hover */
+.customers-marquee-container:hover .customers-track-left,
+.customers-marquee-container:hover .customers-track-right {
+  animation-play-state: paused;
+}
+/* ─────────────────────────────────────────────────────── */
 /* Tag pill style */
 .tag-pill {
   font-family: 'Space Grotesk', sans-serif;
@@ -131,4 +157,45 @@
   background: #e8e0d0;
   color: #3b7597;
   display: inline-block;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.85s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.85s ease-out both;
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 25s linear infinite;
 }

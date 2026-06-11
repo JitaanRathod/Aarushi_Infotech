@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import useLenis from './hooks/useLenis';
 import Navbar from './components/Navbar';
@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import ServicesPage from './pages/ServicesPage';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Industries from './pages/Industries';
 import Blog from './pages/Blog';
 
 import {
@@ -81,6 +82,7 @@ export default function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/industries" element={<Industries />} />
         <Route path="/blog" element={<Blog />} />
 
         {/* SEO Pages — Vasai */}
@@ -118,3 +120,4 @@ export default function App() {
     </Router>
   );
 }
+

@@ -9,27 +9,44 @@ export const SITE = {
 
   website: 'https://aarushiinfotech.in',
 
-  phone: '+91-9967844269',
+  phone: '+91-9702048814',
 
-  phoneTel: '+919967844269',
+  phoneTel: '+919702048814',
 
-  whatsapp: '919967844269',
+  whatsapp: '919702048814',
 
-  email: 'info@aarushiinfotech.in',
+  email: 'inspired1982@yahoo.co.in',
 
   address:
-    'Rustomjee Evershine Global City, J39-503, Virar West, Mumbai, Maharashtra 401303',
+    'Shop No. M6 | M7 Skylon Building Vapi Char Rasta Near HDFC Bank 396195',
 
-  city: 'Virar',
+  city: 'Vapi',
 
-  state: 'Maharashtra',
+  state: 'Gujarat',
 
   country: 'India',
 
-  postalCode: '401303',
+  postalCode: '396195',
 
   googleMapsUrl:
-    'https://www.google.com/maps/search/?api=1&query=Aarushi+Infotech+Rustomjee+Evershine+Global+City+Virar+West+401303',
+    'https://www.google.com/maps/search/?api=1&query=Aarushi+Infotech+Skylon+Building+Vapi+Char+Rasta+396195',
+
+  branches: [
+    {
+      name: 'Main Branch',
+      address: 'Shop No. M6 | M7 Skylon Building Vapi Char Rasta Near HDFC Bank 396195',
+      city: 'Vapi',
+      state: 'Gujarat',
+      postalCode: '396195',
+    },
+    {
+      name: 'Virar Branch',
+      address: 'Rustomjee Evershine Global City, J39-503, Virar West, Mumbai, Maharashtra 401303',
+      city: 'Virar',
+      state: 'Maharashtra',
+      postalCode: '401303',
+    },
+  ],
 
   businessHours: {
     weekdays: 'Monday - Saturday',
@@ -37,7 +54,7 @@ export const SITE = {
   },
 
   social: {
-    whatsapp: 'https://wa.me/919967844269',
+    whatsapp: 'https://wa.me/919702048814',
   },
 
   seo: {
