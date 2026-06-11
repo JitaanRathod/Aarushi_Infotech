@@ -37,15 +37,32 @@ import {
 } from './pages/seo';
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    if (window.lenis) {
-      window.lenis.scrollTo(0, { immediate: true });
-    } else {
-      window.scrollTo(0, 0);
+    const scrollToHash = () => {
+      if (!hash) return false;
+      const id = hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        if (window.lenis) {
+          window.lenis.scrollTo(element, { immediate: true });
+        } else {
+          element.scrollIntoView({ behavior: 'auto' });
+        }
+        return true;
+      }
+      return false;
+    };
+
+    if (!scrollToHash()) {
+      if (window.lenis) {
+        window.lenis.scrollTo(0, { immediate: true });
+      } else {
+        window.scrollTo(0, 0);
+      }
     }
-  }, [pathname]);
+  }, [pathname, hash]);
 
   return null;
 }
@@ -54,7 +71,7 @@ export default function App() {
   useLenis();
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <Cursor />
       <Navbar />
