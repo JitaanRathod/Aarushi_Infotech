@@ -11,6 +11,10 @@ import logo9 from '../assets/customers/logo9.png';
 import logo10 from '../assets/customers/logo10.png';
 import logo11 from '../assets/customers/logo11.png';
 import logo12 from '../assets/customers/logo12.png';
+import logo13 from '../assets/customers/logo13.png';
+import logo14 from '../assets/customers/logo14.png';
+import logo15 from '../assets/customers/logo15.png';
+import logo16 from '../assets/customers/logo16.png';
 
 const industries = [
   {
@@ -58,6 +62,10 @@ const customerLogos = [
   { name: 'Sona', src: logo10 },
   { name: 'Manish Labchem', src: logo11 },
   { name: 'ERA', src: logo12 },
+  { name: 'AIC Technik', src: logo13 },
+  { name: 'Nova Industries', src: logo14 },
+  { name: 'Harsh Accounting', src: logo15 },
+  { name: 'Triton Solutions', src: logo16 },
 ];
 
 function LogoCard({ src, name }) {

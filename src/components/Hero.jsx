@@ -83,7 +83,7 @@ return (
     <div className="lg:col-span-7 flex flex-col justify-center">
       <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-navy/5 border border-brand-navy/10 text-brand-navy font-heading font-extrabold text-xs tracking-wider uppercase mb-6 w-fit">
         <span className="w-2 h-2 rounded-full bg-brand-mint animate-pulse" />
-        Serving GUJARAT, MAHARASTRA, JHARKHAND
+        SERVING IN GUJARAT, DAMAN & DIU, DADRA & NAGAR HAVELI, MAHARASHTRA, ASSAM, HP, UP, JHARKHAND, MP, KARNATAKA
       </div>
 
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-navy leading-[1.1] mb-6 select-none font-heading">
@@ -106,8 +106,8 @@ return (
         ref={subtextRef}
         className="text-lg md:text-xl text-brand-steelblue/80 font-medium max-w-2xl mb-8 leading-relaxed"
       >
-        Helping businesses across Virar, Vasai, Mumbai, Thane, Vapi and
-        Silvassa streamline accounting, automate customer communication and
+        Helping businesses across Vapi, Daman, Silvassa, Mumbai, Virar, Thane
+        and Vasai streamline accounting, automate customer communication and
         build scalable digital systems that support long-term growth.
       </p>
 
@@ -132,8 +132,8 @@ return (
       </div>
 
       <div className="flex flex-wrap gap-6 mt-10 text-sm font-semibold text-brand-steelblue">
-        <div>✓ 450+ Projects Completed</div>
-        <div>✓ 300+ Happy Clients</div>
+        <div>✓ 720+ Projects Completed</div>
+        <div>✓ 650+ Happy Clients</div>
         <div>✓ 20+ Years Experience</div>
       </div>
     </div>

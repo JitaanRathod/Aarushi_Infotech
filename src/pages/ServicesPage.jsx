@@ -23,10 +23,11 @@ export default function ServicesPage() {
       tagline: 'Automated Real-Time Business Alerts',
       description: 'Synchronize your ledger balances and transactions with automatic customer notifications. Send out PDF invoices, ledger statements, payment reminders, and receipts instantly via WhatsApp API.',
       features: [
-        'Automated Outstanding Payment Reminders',
-        'Instant Invoice & Receipt PDFs on dispatch',
-        'Interactive WhatsApp Menu for ledger checks',
-        'High Delivery Rate & Custom Templates'
+        'LR copy Auto send with Tax invoice',
+        'DSC Digital signature print from all device',
+        'Security module like SAP',
+        'Authorization',
+        'Tally on cloud'
       ],
       color: 'text-green-600 bg-green-50 border-green-100'
     },

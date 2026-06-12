@@ -12,6 +12,9 @@ import logo10 from '../assets/customers/logo10.png';
 import logo11 from '../assets/customers/logo11.png';
 import logo12 from '../assets/customers/logo12.png';
 import logo13 from '../assets/customers/logo13.png';
+import logo14 from '../assets/customers/logo14.png';
+import logo15 from '../assets/customers/logo15.png';
+import logo16 from '../assets/customers/logo16.png';
 
 const row1Customers = [
   { name: 'JBF Industries Ltd.',  src: logo1  },
@@ -30,15 +33,18 @@ const row2Customers = [
   { name: 'MANISH LABCHEM PRIVATE LIMITED', src: logo11 },
   { name: 'ERA', src: logo12 },
   { name: 'AIC TECHNIK', src: logo13 },
+  { name: 'NOVA INDUSTRIES', src: logo14 },
+  { name: 'HARSH ACCOUNTING', src: logo15 },
+  { name: 'TRITON SOLUTIONS', src: logo16 },
 ];
 
 function LogoCard({ name, src }) {
   return (
-    <div className="flex items-center justify-center bg-white/95 px-6 py-4 rounded-2xl shadow-lg border border-white/50 mx-3.5 flex-shrink-0 w-[180px] h-[90px] transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5 hover:bg-white">
+    <div className="group relative flex items-center justify-center bg-white/95 px-6 py-4 rounded-2xl shadow-lg border border-white/50 mx-3.5 flex-shrink-0 w-[180px] h-[90px] transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5 hover:scale-110 hover:z-20 hover:bg-white">
       <img
         src={src}
         alt={name}
-        className="max-h-12 max-w-full w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+        className="max-h-12 max-w-full w-auto object-contain transition-all duration-300 group-hover:scale-110"
       />
     </div>
   );
@@ -124,9 +130,9 @@ export default function OurCustomers() {
       {/* Bottom trust stats */}
       <div className="relative z-10 flex flex-wrap justify-center gap-8 md:gap-16 mt-10 md:mt-12 px-6">
         {[
-          { value: '300+', label: 'Happy Clients' },
-          { value: '13+',  label: 'Trusted Brands' },
-          { value: '450+', label: 'Projects Delivered' },
+          { value: '650+', label: 'Happy Clients' },
+          { value: '28+',  label: 'Trusted Brands' },
+          { value: '720+', label: 'Projects Delivered' },
         ].map(({ value, label }) => (
           <div key={label} className="text-center">
             <p

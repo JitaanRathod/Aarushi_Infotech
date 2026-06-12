@@ -131,10 +131,10 @@ export default function Services() {
           </h2>
 
           <p className="text-base md:text-lg text-brand-steelblue/80 font-medium">
-            Aarushi Infotech helps businesses across Virar, Vasai, Mumbai,
-            Thane, Vapi and Silvassa modernize operations through Tally Prime,
-            ERP systems, CRM solutions, WhatsApp automation and professional
-            website development.
+            Aarushi Infotech helps businesses across Vapi, Daman, Silvassa,
+            Mumbai, Virar, Thane and Vasai modernize operations through Tally
+            Prime, ERP systems, CRM solutions, WhatsApp automation and
+            professional website development.
           </p>
         </div>
 
